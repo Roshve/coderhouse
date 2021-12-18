@@ -1,6 +1,8 @@
 let number = prompt("Usuario te ordeno un numero")
-let index = 4;
 
-while (number <= index) {
-    
+for (let index = 0; index < number; index++) {
+    if (index > 3) {
+        break
+    };
+    alert("lado");
 }
