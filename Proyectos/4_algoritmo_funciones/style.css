@@ -12,20 +12,19 @@ body {
 }
 
 .header {
-    height: 90px;
+    padding: 0 90px;
     background-color: white;
-    border: 1px solid red;
+    box-shadow: 4px 4px 16px black;
 }
 
 .navbar{
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
 }
 
 .navbar-list {
     display: flex;
-    border: 1px solid red;
 }
 
 .navbar-list-li {
@@ -33,9 +32,15 @@ body {
     margin-left: 20px;
 }
 
+.navbar-list-a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
 
 .contenedor {
-    margin-top: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
     padding: 16px;
     width: 800px;
     border-radius: 16px;
