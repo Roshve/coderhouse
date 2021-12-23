@@ -33,8 +33,13 @@ body {
 }
 
 .navbar-list-a {
+    color: rgb(14, 14, 14);
     font-weight: bold;
     text-decoration: none;
+}
+
+.navbar-list-li:hover {
+    background: gray;
 }
 
 
