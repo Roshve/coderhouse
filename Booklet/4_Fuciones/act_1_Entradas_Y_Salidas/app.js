@@ -1,10 +1,5 @@
-function entrada() {
-    let valor = prompt("Usuario ingresa un valor")
-    function process(valor) {
-        valor = valor.length
-        return valor
-    }
-    return process()
+const entrada = () => {
+    return prompt("Usuario ingresa un valor")
 }
 
-entrada();
+(entrada());

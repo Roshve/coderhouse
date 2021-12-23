@@ -1,7 +1,7 @@
 /* 3. Conceptos generales: Funciones
     Luis Alejandro Cova Ascanio
 */
-let number = prompt("Ingresa un número")
+/* let number = prompt("Ingresa un número")
 
 
 function ConversionDeNumero(valor) {
@@ -9,4 +9,4 @@ function ConversionDeNumero(valor) {
     return alert(`Tu numero convertido es el siguiente ${valor}`)
 }
 
-ConversionDeNumero(number);
+ConversionDeNumero(number); */
