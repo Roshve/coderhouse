@@ -18,13 +18,13 @@ body {
 }
 
 .navbar{
-    padding: 20px 0;
     display: flex;
     justify-content: space-between;
 }
 
 .navbar-list {
     display: flex;
+    align-items: center;
 }
 
 .navbar-list-li {
@@ -42,12 +42,16 @@ body {
     background: gray;
 }
 
+main {
+    display: flex;
+}
 
 .contenedor {
     margin: 0 auto;
     margin-top: 50px;
     padding: 16px;
-    width: 800px;
+    max-width: 800px;
+    min-width: 400px;
     border-radius: 16px;
     background-color: white;
     box-shadow: 4px 4px 16px black;
