@@ -1,4 +1,4 @@
-/* 3. Conceptos generales: Funciones
+/* 5. Conceptos generales: Objetos
     Luis Alejandro Cova Ascanio
 */
 
