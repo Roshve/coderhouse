@@ -7,15 +7,17 @@ function ask(question) {
 }
 
 function menu() {
-    const opcion = ask("Bienvenido al MasRespuesto.com para poder ofrecerle un producto de primera calidad uses las opciones del menu para saber lo que desea \n\n1) Comprar Respuestos de Autos\n2) Contactanos\n3) Cotizador")
-    
+    let opcion = ask("Bienvenido al MasRespuesto.com para poder ofrecerle un producto de primera calidad uses las opciones del menu para saber lo que desea \n\n1) Comprar Respuestos de Autos\n2) Contactanos\n3) Cotizador")
+    opcion = parseInt(opcion)
+    if (opcion === 1) {
+        return alert("Usted a escogido la opcion 1")
+    } else if (opcion === 2) {
+        return alert("Usted a escogido la opcion 2")
+    } else if (opcion === 3) {
+        return alert("Usted a escogido la opcion 3")
+    } else {
+        return alert("Porfavor escoja una opcion valida")
+    }
 }
 
 menu()
-const birthday = ask("Porfavor ingrese su año de nacimiento")
-const firstName = ask("Porfavor ingrese su primer nombre")
-const country = ask("Porfavor ingrese su pais de locación")
-
-console.log(birthday)
-console.log(firstName)
-console.log(country)
