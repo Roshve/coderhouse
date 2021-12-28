@@ -2,7 +2,35 @@
     Luis Alejandro Cova Ascanio
 */
 
-function ask(question) {
+class SingIn {
+    constructor(username, password, firtsName, lastName) {
+        this.username = username.toString();
+        this.password = password.toString();
+        this.firtsName = firtsName;
+        this.lastName = lastName;
+        this.agree = false;
+    }
+
+    check(desagree) {
+        if(desagree == 1) {
+            this.agree = true
+            alert("Bienvenido a MasRespuestos.com")
+        } else {
+            alert("Vuelve a reiniciar")
+        }
+    }
+}
+
+const user1 = new SingIn(
+    prompt("Ingrese su username"),
+    prompt('ingrese su contraseña'),
+    prompt('ingrese su primer nombre'),
+    prompt('Ingrese su apellido'),
+)
+user1.check(prompt("Escriba 1 si esta deacuerdo con los terminos y condiciones"))
+
+
+/* function ask(question) {
     return prompt(question)
 }
 
@@ -32,4 +60,4 @@ function menu() {
     }
 }
 
-menu()
+menu() */
