@@ -2,7 +2,7 @@
     Luis Alejandro Cova Ascanio
 */
 
-class SingIn {
+/* class SingIn {
   constructor(username, password, firtsName, lastName) {
     this.username = username.toString();
     this.password = password.toString();
@@ -28,7 +28,7 @@ const user1 = new SingIn(
   prompt('Ingrese su apellido'),
 )
 user1.check(prompt("Escriba 1 si esta deacuerdo con los terminos y condiciones"))
-
+ */
 class Anime {
   constructor(title, type, category, condition, votes, episodes) {
     this.title = title;
@@ -40,19 +40,24 @@ class Anime {
   }
 }
 
-let animes = "";
+let animes = [];
 
-for (let index = 0; index < 4; index++) {
+for (let index = 0; index < 2; index++) {
   let anime = new Anime(
     prompt('Ingrese el titulo del anime'),
     prompt('Ingrese el tipo de anime'),
     prompt('Ingrese la categoria del anime'),
+    prompt('Ingrese la estatus del anime'),
     prompt('Ingrese los votos del anime'),
     prompt('Ingrese la cantidad de episodios del anime'),
   );
 
-  animes += `Anime ${index + 1}:  ${anime.title} - ${anime.type} - ${anime.category} - ${anime.condition} - ${anime.votes} - ${anime.episodes}` 
+  animes.push(anime)
 }
+
+animes.map(function(anime){
+  return alert(`Anime: ${anime.title} - ${anime.type} - ${anime.category} - ${anime.condition} - ${anime.votes} - ${anime.episodes}`)
+})
 
 /* function ask(question) {
     return prompt(question)
