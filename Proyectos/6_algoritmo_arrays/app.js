@@ -54,8 +54,11 @@ for (let index = 0; index < 2; index++) {
 
   animes.push(anime)
 }
+/* animes.forEach(function(anime){
+  return alert(`Anime: ${anime.title} - ${anime.type} - ${anime.category} - ${anime.condition} - ${anime.votes} - ${anime.episodes}`)
+}) */
 
-animes.map(function(anime){
+animes.map(function (anime) {
   return alert(`Anime: ${anime.title} - ${anime.type} - ${anime.category} - ${anime.condition} - ${anime.votes} - ${anime.episodes}`)
 })
 
