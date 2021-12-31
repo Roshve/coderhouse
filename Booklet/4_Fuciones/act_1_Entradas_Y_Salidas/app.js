@@ -1,5 +1,13 @@
 const entrada = () => {
-    return prompt("Usuario ingresa un valor")
+  return prompt("Usuario ingresa un valor")
 }
 
-(entrada());
+const procesamiento = (valor) => {
+  return "Hola " + valor
+}
+
+const salida = (valor) => {
+  return alert(valor)
+}
+
+salida(procesamiento(entrada()))
