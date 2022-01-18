@@ -2,7 +2,7 @@
     Luis Alejandro Cova Ascanio
 */
 
-/* class Anime {
+class Anime {
   constructor(title, type, category, condition, votes, episodes) {
     this.title = title;
     this.type = type;
@@ -26,11 +26,19 @@ for (let index = 0; index < 2; index++) {
   );
 
   animes.push(anime)
-} */
+}
 /* animes.forEach(function(anime){
   return alert(`Anime: ${anime.title} - ${anime.type} - ${anime.category} - ${anime.condition} - ${anime.votes} - ${anime.episodes}`)
 }) */
 
-animes.map(function (anime) {
-  return alert(`Anime: ${anime.title} - ${anime.type} - ${anime.category} - ${anime.condition} - ${anime.votes} - ${anime.episodes}`)
-})
+
+for (const anime of animes) {
+  let container = document.createElement('div');
+  container.innerHTML = `<h3>${anime.title}</h3>
+                          <p>${anime.type}</p>
+                          <p>${anime.category}</p>
+                          <p>${anime.condition}</p>
+                          <p>${anime.votes}</p>
+                          <p>${anime.episodes}</p>`;
+  document.getElementsByTagName('aside')[0].appendChild(container);
+}
