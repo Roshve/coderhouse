@@ -1,3 +1,17 @@
+//Agregamos un botón al body como primer elemento
+$(document).ready(() => {
+  $('body').prepend('<button id="btnjQuery">CLICK</button>');
+  $('#btnjQuery').on('dblclick', () => {
+    console.log("Respuesta al doble click");
+  });
+  $('body').prepend('<h1>Hola</h1>')
+
+})
+//Asociamos el evento click al botón creado
+
+//Asociamos el evento doble click al botón creado
+
+
 /* class SingIn {
     constructor(username, password, firtsName, lastName) {
         this.username = username.toString();

@@ -1,3 +1,12 @@
+$(document).ready(() => {
+  $('body').prepend('<button id="btnjQuery">CLICK</button>');
+  $('#btnjQuery').on('dblclick', () => {
+    console.log("Respuesta al doble click");
+  });
+  $('body').prepend('<h1>Hola</h1>')
+
+})
+
 /* class SingIn {
     constructor(username, password, firtsName, lastName) {
         this.username = username.toString();
