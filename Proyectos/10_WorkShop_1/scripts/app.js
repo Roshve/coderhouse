@@ -13,20 +13,21 @@ class Anime {
   }
 }
 
+const a = document.getElementById('titulo')
+a.onchange = () => console.log(a.value);
+
+
 let animes = [];
 
-for (let index = 0; index < 2; index++) {
-  let anime = new Anime(
-    prompt('Ingrese el titulo del anime'),
-    prompt('Ingrese el tipo de anime'),
-    prompt('Ingrese la categoria del anime'),
-    prompt('Ingrese la estatus del anime'),
-    prompt('Ingrese los votos del anime'),
-    prompt('Ingrese la cantidad de episodios del anime'),
-  );
+let anime = new Anime(
+  document.getElementById('titulo'),
+  document.getElementById('tipo'),
+  document.getElementById('categoria'),
+  document.getElementById('estatus'),
+  document.getElementById('votos'),
+  document.getElementById('episodios')
+);
 
-  animes.push(anime)
-}
 /* animes.forEach(function(anime){
   return alert(`Anime: ${anime.title} - ${anime.type} - ${anime.category} - ${anime.condition} - ${anime.votes} - ${anime.episodes}`)
 }) */
@@ -40,5 +41,5 @@ for (const anime of animes) {
                           <p>${anime.condition}</p>
                           <p>${anime.votes}</p>
                           <p>${anime.episodes}</p>`;
-  document.getElementsByTagName('aside')[0].appendChild(container);
+  document.getElementsByTagName('section')[0].appendChild(container);
 }
